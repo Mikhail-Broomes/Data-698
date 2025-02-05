@@ -1,0 +1,22 @@
+The first step of your project is to submit an initial proposal, which will help to ensure that your project is both worthwhile and feasible in the time frame of the semester. Your proposal should describe the area that you are interested in (and if you have a specific question already you can describe that too), the datasets you are going to use, and your data analysis plan. Your proposal should be a maximum of 4 pages (excluding figures and references), and should include three sections:
+
+Section 1 - Introduction: The introduction should describe the motivation for your project, the subject matter area of your dataset, and any general research questions you may already have.
+
+Section 2 - Data: At the time of submitting the proposal you should have already identified some datasets that you plan to use in your analysis. Give a quick description of those datasets here and how they will help you answer your questions.
+
+Section 3 - Data analysis plan: Describe your initial approach to analyzing your data. How will your datasets need to be processed in for your to make use of all of them in the analysis? Which sort of comparisons do you plan to make in your exploratory data analysis (you can share early visualizations of this is you have them)? What statistical methods do you think are appropriate to address the questions that motivated your interest?
+
+The proposal is preliminary, and you can include additional data or a different analysis as needs require.
+
+Heilmeier's Questions:
+When writing proposals, I’ve found the following set of considerations, called “Heilmeier's Questions”, to be helpful to consider.  Although these criteria were developed for a different context, you might find them helpful as well, and useful for formulating future projects and proposals that you might have to complete. These questions were developed by Dr. George Heilmeier, who was the director of DARPA from 1975-1977. Heilmeier said that every proposal to DARPA needed to answer these questions clearly and completely in order to receive funding:
+
+What are you trying to do? Articulate your objectives using absolutely no jargon. What is the problem? Why is it hard?
+How is it done today, and what are the limits of current practice?
+What is new in your approach, and why do you think it will be successful?
+Who cares?
+If you’re successful, what difference will it make? What applications are enabled as a result?
+What are the risks?
+How much will it cost? (No need to spend money here)
+How long will it take?
+What are the midterm and final “exams” to check for success? How will progress be measured?
