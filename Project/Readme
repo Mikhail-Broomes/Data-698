@@ -1,22 +1,75 @@
-The first step of your project is to submit an initial proposal, which will help to ensure that your project is both worthwhile and feasible in the time frame of the semester. Your proposal should describe the area that you are interested in (and if you have a specific question already you can describe that too), the datasets you are going to use, and your data analysis plan. Your proposal should be a maximum of 4 pages (excluding figures and references), and should include three sections:
+# ⚡ Electricity Load Forecasting & Grid Anomaly Detection
 
-Section 1 - Introduction: The introduction should describe the motivation for your project, the subject matter area of your dataset, and any general research questions you may already have.
+![project-banner](https://your-banner-url.com)
 
-Section 2 - Data: At the time of submitting the proposal you should have already identified some datasets that you plan to use in your analysis. Give a quick description of those datasets here and how they will help you answer your questions.
+## 📘 Overview
 
-Section 3 - Data analysis plan: Describe your initial approach to analyzing your data. How will your datasets need to be processed in for your to make use of all of them in the analysis? Which sort of comparisons do you plan to make in your exploratory data analysis (you can share early visualizations of this is you have them)? What statistical methods do you think are appropriate to address the questions that motivated your interest?
+This project develops a robust, explainable, and deployable machine learning pipeline for electricity demand forecasting and anomaly detection, leveraging real-world grid and weather data from Spain.
 
-The proposal is preliminary, and you can include additional data or a different analysis as needs require.
+It integrates:
+- Classical time series modeling (ARIMA/ARIMAX)
+- Machine learning (XGBoost, Random Forest)
+- Hybrid modeling
+- SHAP for explainability
+- Isolation Forest for anomaly detection
+- Forecasting at 1h, 24h, and 7-day horizons
 
-Heilmeier's Questions:
-When writing proposals, I’ve found the following set of considerations, called “Heilmeier's Questions”, to be helpful to consider.  Although these criteria were developed for a different context, you might find them helpful as well, and useful for formulating future projects and proposals that you might have to complete. These questions were developed by Dr. George Heilmeier, who was the director of DARPA from 1975-1977. Heilmeier said that every proposal to DARPA needed to answer these questions clearly and completely in order to receive funding:
+---
 
-What are you trying to do? Articulate your objectives using absolutely no jargon. What is the problem? Why is it hard?
-How is it done today, and what are the limits of current practice?
-What is new in your approach, and why do you think it will be successful?
-Who cares?
-If you’re successful, what difference will it make? What applications are enabled as a result?
-What are the risks?
-How much will it cost? (No need to spend money here)
-How long will it take?
-What are the midterm and final “exams” to check for success? How will progress be measured?
+## 📂 Project Structure
+
+
+---
+
+## 🔧 Methods Used
+
+- **ARIMA / ARIMAX**: Time series forecasting with exogenous weather variables
+- **XGBoost**: Tree-based boosting model with lag + calendar + weather features
+- **Hybrid ARIMA + ML**: Combine statistical and residual-based ML correction
+- **SHAP**: Explainable AI to visualize feature impact on each prediction
+- **Isolation Forest**: Detect abnormal grid behavior from residuals
+
+---
+
+## 📊 Results
+
+| Model           | MAE     | RMSE    | MAPE (%) |
+|----------------|---------|---------|-----------|
+| ARIMA          | 5549.61 | 6676.46 | 22.69%    |
+| XGBoost        | 1939.80 | 2610.27 | 6.97%     |
+| Hybrid         | 2124.59 | 2734.96 | 7.49%     |
+
+---
+
+## 🚨 Real-Time Anomaly Simulation
+
+- Residual-based scoring with Isolation Forest
+- Alerts triggered for 351 high-risk points
+- Use case: Predictive maintenance or cyberattack detection
+
+---
+
+## 🖥️ Shiny Dashboard (coming soon)
+
+> Upload data, forecast future load, explain predictions (SHAP), and view anomaly alerts live.
+
+---
+
+## 🧠 Project Goals
+
+- Increase energy forecasting accuracy using modern ML
+- Provide explainability for operator trust
+- Detect abnormal events proactively
+- Create an adaptable pipeline for any region/grid
+
+---
+
+## 📌 To Run
+
+```r
+# Run report
+quarto render forecasting_report.qmd
+
+# Launch Shiny app
+shiny::runApp("shiny-app/")
+
